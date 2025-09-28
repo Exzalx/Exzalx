@@ -1,30 +1,34 @@
 #!/bin/bash
 
-# ==============================
 # Color codes
-# ==============================
 RED='\033[0;31m'
 GRN='\033[0;32m'
 YEL='\033[1;33m'
+CYN='\033[0;36m'
+BLU='\033[1;34m'
+MAG='\033[0;35m'
 NC='\033[0m' # No color
 
-# ==============================
-# Banner display (Exzal~x)
-# ==============================
+# Banner colors
+BWHITE='\033[47m' 
+PINK='\033[95m'  # Bright magenta for pink text
+
 clear
-echo
-figlet -f block "Exzal~x" | lolcat -a -d 2
+
+# Banner display
+echo -e "${BWHITE}${PINK}  # # # #   #           #  # # # # # #      #         #                         ${NC}"
+echo -e "${BWHITE}${PINK}  #            #       #              #   #   #       #                         ${NC}"
+echo -e "${BWHITE}${PINK}  #              #   #             #     #     #      #                         ${NC}"
+echo -e "${BWHITE}${PINK}  # # #            #            #       #       #     #                         ${NC}"
+echo -e "${BWHITE}${PINK}  #              #   #       #         ###########    #                         ${NC}"
+echo -e "${BWHITE}${PINK}  #            #      #   #           #           #   #                         ${NC}"
+echo -e "${BWHITE}${PINK}  # # # #   #          #  # # # # # #              #  # # # # # #               ${NC}"
 echo
 
-# ==============================
-# Info
-# ==============================
-echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4 Binder - Exzal~x ${NC}"
+echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4  - Exzal~x ${NC}"
 echo
 
-# ==============================
 # Input prompts
-# ==============================
 echo -ne "${GRN}📸 Image file path (e.g. /home/user/photo.jpg): ${NC}"
 read img
 
@@ -39,9 +43,7 @@ img=$(eval echo "$img")
 zip=$(eval echo "$zip")
 out=$(eval echo "$out")
 
-# ==============================
 # File existence check
-# ==============================
 if [[ ! -f "$img" ]]; then
   echo -e "${RED}❌ Error: Image file not found at: $img${NC}"
   exit 1
@@ -52,12 +54,10 @@ if [[ ! -f "$zip" ]]; then
   exit 1
 fi
 
-# ==============================
 # Binding process
-# ==============================
 cat "$img" "$zip" > "$out"
 
-# ==============================
 # Completion message
-# ==============================
 echo -e "${GRN}✅ Done! Output file created: ${out}${NC}"
+echo -e ""ated: ${out}${NC}"
+echo -e ""
