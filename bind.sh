@@ -4,26 +4,14 @@
 RED='\033[0;31m'
 GRN='\033[0;32m'
 YEL='\033[1;33m'
-CYN='\033[0;36m'
-BLU='\033[1;34m'
-MAG='\033[0;35m'
 NC='\033[0m' # No color
-
-# Banner colors
-BWHITE='\033[47m' 
-PINK='\033[95m'  # Bright magenta for pink text
 
 clear
 
-# Banner display
-echo -e "${BWHITE}${PINK} ###                                ######  ${NC}"
-echo -e "${BWHITE}${PINK}  #  #    #   ##    ####  ######    #     # # #    # #####  ${NC}"
-echo -e "${BWHITE}${PINK}  #  ##  ##  #  #  #    # #         #     # # ##   # #    # ${NC}"
-echo -e "${BWHITE}${PINK}  #  # ## # #    # #      #####     ######  # # #  # #    # ${NC}"
-echo -e "${BWHITE}${PINK}  #  #    # ###### #  ### #         #     # # #  # # #    # ${NC}"
-echo -e "${BWHITE}${PINK}  #  #    # #    # #    # #         #     # # #   ## #    # ${NC}"
-echo -e "${BWHITE}${PINK} ### #    # #    #  ####  ######    #######  # #    # #####  ${NC}"
-echo
+# Big green skull banner
+echo -e "\n\n\n"
+echo -e "${GRN}                 ☠️                 ${NC}"
+echo -e "\n\n"
 
 echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4  - Exzal~x ${NC}"
 echo
@@ -59,5 +47,4 @@ cat "$img" "$zip" > "$out"
 
 # Completion message
 echo -e "${GRN}✅ Done! Output file created: ${out}${NC}"
-echo -e ""ated: ${out}${NC}"
-echo -e ""
+echo
