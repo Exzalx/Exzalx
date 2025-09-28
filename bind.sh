@@ -16,13 +16,13 @@ PINK='\033[95m'  # Bright magenta for pink text
 clear
 
 # Banner display
-echo -e "${BWHITE}${PINK}  # # # #   #           #  # # # # # #      #         #                         ${NC}"
-echo -e "${BWHITE}${PINK}  #            #       #              #   #   #       #                         ${NC}"
-echo -e "${BWHITE}${PINK}  #              #   #             #     #     #      #                         ${NC}"
-echo -e "${BWHITE}${PINK}  # # #            #            #       #       #     #                         ${NC}"
-echo -e "${BWHITE}${PINK}  #              #   #       #         ###########    #                         ${NC}"
-echo -e "${BWHITE}${PINK}  #            #      #   #           #           #   #                         ${NC}"
-echo -e "${BWHITE}${PINK}  # # # #   #          #  # # # # # #              #  # # # # # #               ${NC}"
+echo -e "${BWHITE}${GRN}  # # # #   #           #  # # # # # #      #         #                         ${NC}"
+echo -e "${BWHITE}${GRN}  #            #       #              #   #   #       #                         ${NC}"
+echo -e "${BWHITE}${GRN}  #              #   #             #     #     #      #                         ${NC}"
+echo -e "${BWHITE}${GRN}  # # #            #            #       #       #     #                         ${NC}"
+echo -e "${BWHITE}${GRN}  #              #   #       #         ###########    #                         ${NC}"
+echo -e "${BWHITE}${GRN}  #            #      #   #           #           #   #                         ${NC}"
+echo -e "${BWHITE}${GRN}  # # # #   #          #  # # # # # #              #  # # # # # #               ${NC}"
 echo
 
 echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4  - Exzal~x ${NC}"
