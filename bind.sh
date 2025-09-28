@@ -25,7 +25,7 @@ echo -e "${BWHITE}${GRN}  #            #      #   #           #           #   # 
 echo -e "${BWHITE}${GRN}  # # # #   #          #  # # # # # #              #  # # # # # #               ${NC}"
 echo
 
-echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4  - Exzal~x ${NC}"
+echo -e "${YEL}🔗 Image + pdf + png + mp3 + jpg + mp4  - ZeroDark Nexus Edition${NC}"
 echo
 
 # Input prompts
@@ -59,5 +59,4 @@ cat "$img" "$zip" > "$out"
 
 # Completion message
 echo -e "${GRN}✅ Done! Output file created: ${out}${NC}"
-echo -e ""ated: ${out}${NC}"
 echo -e ""
